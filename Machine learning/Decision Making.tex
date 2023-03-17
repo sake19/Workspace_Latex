@@ -1,0 +1,178 @@
+\documentclass[11pt]{article}
+% 쪽번호 생성
+% \usepackage{plain}
+
+\usepackage{fancyhdr}
+% \usepackage{headings}
+
+\usepackage{amsmath}
+% use UTF8 encoding
+\usepackage[utf8]{inputenc}
+% use KoTeX package for Korean
+\usepackage{kotex}
+
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+
+% \setlength{\headheight}{30pt}
+
+% \pagestyle{headings}
+\pagestyle{fancy}
+
+\fancyhead[O]{output you want}
+
+% \markright{John Smith\hfill On page styles\hfill}
+
+\renewcommand{\headrulewidth}{4pt}
+% \renewcommand{\footrulewidth}{2pt}
+
+\fancyhf{}
+
+% \fancyhead[L]{\includegraphics[width=1cm]{example-image-a}}
+% \fancyhead[C]{}
+% \fancyhead[R]{\rightmark}
+% \fancyfoot[L]{ABC}
+% \fancyfoot[C]{\textcopyright xyz}
+% \fancyfoot[R]{\thepage}
+
+% \hypersetup{
+%     colorlinks=true,   
+%     urlcolor=red,
+% }
+
+\title{Decision making}
+
+\author{Minwoo Jung}
+
+\begin{document}
+
+\maketitle
+
+\section{개요}
+\indent \\본 문서는 스마트 가든 플랫폼의 기술문서이다. 본 문서는 스마트 가든 플랫폼에 대한 구성, 특성, 설치법 등 다양한 정보를 포함하고 있다. 
+
+\subsection{시스템 특징}
+\indent \\스마트 가든 플랫폼은 관개제어기, 게이트웨이, 서버로 구성되어 있다. 관개제어기는 토양 환경을 모니터링 할 수 있는 센서부, 토양 환경 변화를 감지하여 능동적으로 관개시스템을 제어할 수 있는 제어부, 외부충격 방지와 방수를 위한 기구부로 구성된다. 
+
+\subsection{관개제어기}
+\indent \\센서부는 영양분(NPK), 전기전도성(EC), 온습도, 산성도(pH)와 같은 토양센서를 포함하고 있다. 센서와 관개제어기는 RS-485 MODBUS 프로토콜을 기반 버스로 연결되어 있다. 관개제어기에 연결 가능한 센서 개수는 최대 4개이다. 센서에서 수집된 토양 정보는 게이트웨이로 전송된다.
+관개제어기는 유비노스 운영체제가 탑재되어 있다. 유비노스 운영체제는  
+관개제어기는 게이트웨이와 데이터 송수신을 위해서 블루투스(BLE) 프로토콜을 지원한다.
+
+\subsubsection{하드웨어 구조}
+\indent \\관개제어기의 하드웨어는 데이터 처리와 블루투스 통신을 위한 MCU, 솔레노이드 제어를 위한 Relay, 토양 센서 데이터 수집을 위한 RS-485 트랜시버로 구성되어 있다. 센서와 솔레노이드 전원은 DC-12V 입력을 인가한다. RS-485 트랜시버는 
+
+\subsubsection{RS-485 통신환경}
+\indent \\RS-485 통신은 송/수신을 동시에 할 수 없는 반이중(Half-duplex) 방식을 채택하고 있어서 트랜시버에 RX와 TX를 커트롤하는 핀이 있다. 또한 데이터 전송 거리는 최대 1.2km로 장거리 전송이 가능하다. 일반적으로 100kbps 전송 속도에서 약 1.2km 전송거리를 가지며, 10Mbps 전송 속도로 올리면 전송거리가 12m로 줄어든다. RS-485통신은 하나의 노드에 여러 대의 장비를 병렬로 연결할 수 있는 멀티드랍(Multi-drop)이 가능하다.
+
+\begin{table}
+    \centering
+    \caption{Communication Basic Parameters}
+    \label{t1}
+    % \begin{tabular}{|c|c|c|c|}
+    \resizebox{\textwidth}{!}
+    {%
+    \begin{tabular}{|c|c|}
+    \noalign{\smallskip}\noalign{\smallskip}\hline
+    % & column1 & column2 & column3 \\
+    PARAMETERS & content \\
+    % \hline
+    % row1 & - & - & - \\
+    % \hline
+    % row2 & - & - & - \\
+    % \hline
+    % row3  & - & - & - \\
+    % \hline
+    \hline
+    Protocol & Modbus RTU \\
+    \hline
+    Data bits & 8 bit \\
+    \hline
+    Parity  & No \\
+    \hline
+    Stop bit  & 1 bit \\
+    \hline
+    Error checking  & CRC (redundant loop code) \\
+    \hline
+    Baud rate  & 2400 bps/ 4800 bps/ 9600 bps can be set factory defaults to 9600 bps\\
+    \hline
+    \end{tabular}
+    }
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{Register Address}
+    \label{t2}
+    \resizebox{\textwidth}{!}
+    {
+    \begin{tabular}{|c|c|c|c|}
+    % \resizebox{\textwidth}{!}
+    % {
+    % \begin{tabular}{|c|c|}
+    \noalign{\smallskip}\noalign{\smallskip}\hline
+    % & column1 & column2 & column3 \\
+    Register Address & PIC Configuration Address & content & Operation \\
+    % \hline
+    % row1 & - & - & - \\
+    % \hline
+    % row2 & - & - & - \\
+    % \hline
+    % row3  & - & - & - \\
+    % \hline
+    \hline
+    0002H & 40003 & Soil humidity & Read-Only \\
+    \hline
+    0003H & 40004 & Soil temperature & Read-Only \\
+    \hline
+    0100H & 40101 & Device Address & Read-Write \\
+    \hline
+    0101H & 40102 & Baud Rate & Read-Write \\
+    \hline    
+    \end{tabular}
+    }
+\end{table}
+
+% \begin{table}
+%     \centering
+%     \caption{Message Frame}
+%     \label{t3}
+%     % \resizebox{\textwidth}{!}
+%     % {
+%     \begin{tabular}{|c|c|c|c|c|c|}
+%     % \resizebox{\textwidth}{!}
+%     % {
+%     % \begin{tabular}{|c|c|}
+%     \noalign{\smallskip}\noalign{\smallskip}\hline
+%     % & column1 & column2 & column3 \\
+%     Inquiry Frame & & & & & &\\
+%     % \hline
+%     % row1 & - & - & - \\
+%     % \hline
+%     % row2 & - & - & - \\
+%     % \hline
+%     % row3  & - & - & - \\
+%     % \hline
+%     \hline
+%     Address Code & Function Code & Start Address & Data Length & CRC_L & CRC_H \\
+%     \hline
+%     Answer Frame & & & & & & \\
+%     \hline
+%     Address Code & Function Code & Number of Valid Bytes & Value & CRC_L & CRC_H \\    
+%     \hline
+%     \end{tabular}
+%     % }
+% \end{table}
+
+\subsubsection{메시지구조}
+\indent \\MODBUS는 산업용 표준 직렬 통신 프로토콜이다. MODBUS는 마스트와 슬레이브 프레임워크로 구성되어 있다. 슬레이브는 고유 주소를 가진다. 토양 센서에서 제공하는 MODBUS 기본 파라미터는 표\ref{t1}과 같다. 표\ref{t2}는 센서의 레지스터 주소값을 보여주고 있다. 레지스터 주소값을 기반으로 센싱 데이터를 요청할 수 있고, 센서 고유 아이디와 전송속도를 변경할 수 있다. %표\ref{t3}는 request message와 respond message 구조를 보여주고 있다.%
+ 
+
+\subsection{게이트웨이}
+\indent \\게이트웨이는 다수의 관개제어기로부터 토양 데이터를 수집하고, MQTT 프로토콜을 기반으로 서버로 데이터를 전송한다. 게이트웨이의 멀티태스킹을 위해서 유비노스 운영체제를 탑재하였다. 
+
+\subsection{서버}
+\indent \\서버는 MQTT(Message Queuing Telemetry Transport) 브로커와 데이터베이스로 구성되어 있다. MQTT는 publish/subscribe/broker를 사용하는 프로토콜로서 subscriber는 토픽을 구독하기 위한 목적,publisher는 토픽을 발행하기 위한 목적으로 broker와 연결된다. 
+
+\end{document}
