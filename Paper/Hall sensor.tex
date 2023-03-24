@@ -82,13 +82,26 @@ Potentiometer sensors: These sensors use a rotary potentiometer to measure chang
 
 The choice of sensor will depend on factors such as cost, accuracy, and environmental conditions. For example, ultrasonic sensors may be less accurate in wet or snowy conditions, while laser sensors may be more expensive than other options. Ultimately, the goal of a height level sensor is to provide accurate and reliable information to the vehicle's suspension and other systems, to ensure a safe and comfortable ride.
 
-\subsection{시스템 특징}
-\indent \\스마트 가든 플랫폼은 관개제어기, 게이트웨이, 서버로 구성되어 있다. 관개제어기는 토양 환경을 모니터링 할 수 있는 센서부, 토양 환경 변화를 감지하여 능동적으로 관개시스템을 제어할 수 있는 제어부, 외부충격 방지와 방수를 위한 기구부로 구성된다. 
+\subsection{토양습도와 전기전도도}
+\indent \\전기전도성은 Ohm의 법칙에 따라 전기저항(R)과 전류(I)와의 관계로 정의됩니다. Ohm의 법칙은 다음과 같습니다.
 
-\subsection{관개제어기}
-\indent \\센서부는 영양분(NPK), 전기전도성(EC), 온습도, 산성도(pH)와 같은 토양센서를 포함하고 있다. 센서와 관개제어기는 RS-485 MODBUS 프로토콜을 기반 버스로 연결되어 있다. 관개제어기에 연결 가능한 센서 개수는 최대 4개이다. 센서에서 수집된 토양 정보는 게이트웨이로 전송된다.
-관개제어기는 유비노스 운영체제가 탑재되어 있다. 유비노스 운영체제는  
-관개제어기는 게이트웨이와 데이터 송수신을 위해서 블루투스(BLE) 프로토콜을 지원한다.
+R = V/I
+
+여기서 R은 전기저항을, V는 전압을, I는 전류를 나타냅니다. 이 때, 전류가 일정하다면 전압과 전기저항은 비례 관계에 있습니다. 따라서, 전기저항이 작을수록 전압이 낮아지게 되며, 이는 전기전도도가 증가하는 것으로 해석할 수 있습니다.
+
+토양의 경우, 전기전도도는 토양의 전기저항과 같이 토양 내부를 통과하는 전류와 전압 간의 관계로 나타낼 수 있습니다. 따라서, 전기전도도는 다음과 같은 수식으로 표현할 수 있습니다.
+
+σ = I / V
+
+여기서 σ는 전기전도도를, I는 전류를, V는 전압을 나타냅니다. 토양의 전기전도도는 토양 내부의 물 분자의 양과 이동성에 따라 결정되므로, 토양 습도가 높을수록 전기전도도가 증가하게 됩니다.
+
+따라서, 이를 이용하여 전기전도도 센서를 이용하여 토양의 전기전도도를 측정하고 이를 토양 습도로 변환하는 방법이 사용됩니다. 이를 이용하여 작물의 수분 관리를 할 수 있으며, 농업 분야에서 널리 사용되고 있습니다.
+\subsection{토양 온도와 토양 습도}
+\indent \\낮 시간동안 토양의 온도가 상승하면 토양 내부에 있는 물 분자들의 운동에너지가 증가하게 됩니다. 이는 분자들 간의 상호작용력을 극복하기 위해 물 분자들이 더욱 빠르게 움직이고, 이로 인해 수증기의 증발속도가 증가합니다. 따라서, 토양 습도는 상승하게 됩니다.
+
+이와 더불어, 토양 온도가 증가하면 토양 내부의 물 분자들이 더 높은 에너지 상태에 있게 되어서 상대적으로 덜 결합되게 됩니다. 이는 물 분자들의 이동성을 증가시키며, 이로 인해 수분이 더욱 자유롭게 이동할 수 있게 됩니다. 따라서, 토양 습도의 상승에 기여하는 요인 중 하나는 이동성이 증가하는 것입니다.
+
+총론적으로, 낮 시간동안 토양의 온도가 상승하면 토양 내부의 수분이 증발하는 속도가 증가하고, 물 분자들의 이동성이 증가하여 토양 습도가 상승하는 것으로 보입니다.
 
 \subsubsection{하드웨어 구조}
 \indent \\관개제어기의 하드웨어는 데이터 처리와 블루투스 통신을 위한 MCU, 솔레노이드 제어를 위한 Relay, 토양 센서 데이터 수집을 위한 RS-485 트랜시버로 구성되어 있다. 센서와 솔레노이드 전원은 DC-12V 입력을 인가한다. RS-485 트랜시버는 
