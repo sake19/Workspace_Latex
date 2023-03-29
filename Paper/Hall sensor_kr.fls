@@ -2,8 +2,8 @@ PWD C:/Users/Minwoo/Workspace_Latex/Paper
 INPUT c:/texlive/2021/texmf.cnf
 INPUT c:/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Minwoo/Workspace_Latex/Paper/Hall sensor.tex
-OUTPUT Hall sensor.log
+INPUT c:/Users/Minwoo/Workspace_Latex/Paper/Hall sensor_kr.tex
+OUTPUT Hall sensor_kr.log
 INPUT c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -487,10 +487,10 @@ INPUT c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Hall sensor.aux
-INPUT Hall sensor.aux
-INPUT Hall sensor.aux
-OUTPUT Hall sensor.aux
+INPUT ./Hall sensor_kr.aux
+INPUT Hall sensor_kr.aux
+INPUT Hall sensor_kr.aux
+OUTPUT Hall sensor_kr.aux
 INPUT c:/texlive/2021/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT c:/texlive/2021/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
 INPUT c:/texlive/2021/texmf-dist/tex/latex/nanumtype1/lucnanummj.fd
@@ -532,18 +532,18 @@ INPUT c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT ./Hall sensor.out
-INPUT Hall sensor.out
-INPUT ./Hall sensor.out
-INPUT Hall sensor.out
-INPUT ./Hall sensor.out
-INPUT Hall sensor.out
-INPUT ./Hall sensor.out
-INPUT Hall sensor.out
-OUTPUT Hall sensor.pdf
-INPUT ./Hall sensor.out
-INPUT ./Hall sensor.out
-OUTPUT Hall sensor.out
+INPUT ./Hall sensor_kr.out
+INPUT Hall sensor_kr.out
+INPUT ./Hall sensor_kr.out
+INPUT Hall sensor_kr.out
+INPUT ./Hall sensor_kr.out
+INPUT Hall sensor_kr.out
+INPUT ./Hall sensor_kr.out
+INPUT Hall sensor_kr.out
+OUTPUT Hall sensor_kr.pdf
+INPUT ./Hall sensor_kr.out
+INPUT ./Hall sensor_kr.out
+OUTPUT Hall sensor_kr.out
 INPUT c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -578,80 +578,66 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbba.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc2.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc9.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbad.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc8.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb2.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc0.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc5.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc6.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd4.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc9.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb8.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd1.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc2.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd5.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcf.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb9.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd2.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd0.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmad.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb4.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmac.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc8.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmae.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbc.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd3.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb7.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb3.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcc.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb5.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbac.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc7.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbd2.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc6.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbd.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmba.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb1.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbc1.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbbc.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjbb8.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc7.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb7.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd5.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc1.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb2.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcc.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc5.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc8.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc2.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd1.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc0.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc6.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb4.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmba.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmac.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd0.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb3.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc9.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb1.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb0.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbc.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb8.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbd.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb9.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmce.tfm
-INPUT Hall sensor.aux
-INPUT ./Hall sensor.out
-INPUT ./Hall sensor.out
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmcd.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd3.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb6.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmad.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd6.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbb.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmb5.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmc3.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmae.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmbe.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd7.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd2.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/nanumtype1/nanummjmd4.tfm
+INPUT c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT Hall sensor_kr.aux
+INPUT ./Hall sensor_kr.out
+INPUT ./Hall sensor_kr.out
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbac.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbad.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbba.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbbc.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbb8.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc1.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc2.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc6.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc7.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc8.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbc9.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjbd2.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmac.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmad.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmae.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb0.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb1.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb2.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb3.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb4.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb5.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb6.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb7.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb8.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmb9.pfb
@@ -663,17 +649,20 @@ INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmbe.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc0.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc1.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc2.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc3.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc5.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc6.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc7.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc8.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmc9.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcc.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcd.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmce.pfb
-INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmcf.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd0.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd1.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd2.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd3.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd4.pfb
 INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd5.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd6.pfb
+INPUT c:/texlive/2021/texmf-dist/fonts/type1/public/nanumtype1/nanummjmd7.pfb

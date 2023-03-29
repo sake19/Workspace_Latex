@@ -50,6 +50,30 @@
 \maketitle
 
 \section{Introduction}
+\indent \\A height level sensor is an essential component for a vehicle as it provides critical information about the height of the vehicle's chassis above the ground. This information is crucial for the vehicle's suspension system to adjust the ride height of the vehicle based on the terrain being traversed and the load being carried.
+
+The importance of a height level sensor for a vehicle can be attributed to several factors, such as safety, comfort, efficiency, and load management. Firstly, the ride height of a vehicle affects its stability and handling characteristics, which can lead to a hazardous situation, particularly at high speeds. Hence, a height level sensor helps ensure that the ride height remains within safe limits.
+
+Secondly, the suspension system of a vehicle is designed to provide a smooth and comfortable ride, and an improperly adjusted ride height can lead to a harsh and uncomfortable ride. A height level sensor helps ensure that the ride height is optimized for comfort.
+
+Thirdly, the ride height of a vehicle also affects its aerodynamic efficiency, and an improperly adjusted ride height can lead to increased wind resistance and reduced fuel efficiency. A height level sensor helps ensure that the vehicle's ride height is optimized for efficiency.
+
+Lastly, many vehicles, especially trucks and SUVs, are designed to carry heavy loads, and the ride height needs to be adjusted to accommodate the weight of the load. A height level sensor helps ensure that the vehicle's suspension system adjusts to provide better handling and stability.
+
+In summary, a height level sensor is a critical component for ensuring the safe, comfortable, and efficient operation of a vehicle.
+
+\indent \\There are several types of sensors used in height level sensors, and they operate in different ways to detect the distance between the vehicle's chassis and the ground. The operating type of sensors commonly used in height level sensors are:
+
+Ultrasonic Sensors: Ultrasonic sensors work by emitting high-frequency sound waves and measuring the time it takes for the sound waves to bounce back after hitting an object. In a height level sensor, ultrasonic sensors are mounted on the vehicle's chassis and emit sound waves downwards towards the ground. The time it takes for the sound waves to bounce back is measured, and the distance between the chassis and the ground is calculated based on the speed of sound.
+
+Infrared Sensors: Infrared sensors work by emitting a beam of infrared light and measuring the time it takes for the light to reflect off an object and return to the sensor. In a height level sensor, infrared sensors are mounted on the vehicle's chassis and emit a beam of infrared light downwards towards the ground. The time it takes for the light to reflect off the ground is measured, and the distance between the chassis and the ground is calculated based on the speed of light.
+
+Load Sensors: Load sensors are used to detect the weight of the vehicle and the load being carried. In a height level sensor, load sensors are used to detect the weight of the vehicle and adjust the ride height accordingly. Load sensors are often used in combination with other types of sensors, such as ultrasonic or infrared sensors, to provide a more accurate measurement of the distance between the chassis and the ground.
+
+Magnetic Sensors: Magnetic sensors work by detecting changes in the magnetic field caused by the presence of metallic objects. In a height level sensor, magnetic sensors are used to detect the height of the vehicle by measuring the distance between the chassis and the ground. This is done by placing a magnetic sensor on the vehicle's chassis and measuring the distance to the ground. However, magnetic sensors are less commonly used in height level sensors as they can be affected by the presence of other metallic objects in the environment.
+
+In summary, there are several types of sensors used in height level sensors, including ultrasonic, infrared, load, and magnetic sensors. Each type of sensor operates differently and provides a different measurement of the distance between the vehicle's chassis and the ground. The choice of sensor depends on the specific application and the requirements of the vehicle.
+
 \indent \\Height level sensors for vehicles have been around for several years and are becoming increasingly popular as more vehicles incorporate electronic systems for suspension control and other functions. The basic idea behind a height level sensor is to measure the distance between the vehicle's chassis and the ground, which can be used to adjust the vehicle's suspension system and maintain a consistent ride height.
 
 The concept of height level sensors can be traced back to the early days of the automobile, where some vehicles were equipped with manual leveling systems that allowed the driver to adjust the suspension manually. However, with the advent of electronic control systems, the use of sensors has become more common.
@@ -82,140 +106,43 @@ Potentiometer sensors: These sensors use a rotary potentiometer to measure chang
 
 The choice of sensor will depend on factors such as cost, accuracy, and environmental conditions. For example, ultrasonic sensors may be less accurate in wet or snowy conditions, while laser sensors may be more expensive than other options. Ultimately, the goal of a height level sensor is to provide accurate and reliable information to the vehicle's suspension and other systems, to ensure a safe and comfortable ride.
 
-\subsection{토양습도와 전기전도도}
-\indent \\전기전도성은 Ohm의 법칙에 따라 전기저항(R)과 전류(I)와의 관계로 정의됩니다. Ohm의 법칙은 다음과 같습니다.
+\indent \\The integration of height sensing technology into suspension control arms allows for the collection of valuable data about a vehicle's movements and its surrounding environment. This data can be analyzed and used for a variety of purposes, such as predictive maintenance, road condition monitoring, and electronic safety system optimization. The smart chassis component can also support new business models and increase transparency for fleet businesses. By integrating additional sensor functions in the future, the technical condition of rental vehicles can be documented, which is especially important for new mobility concepts where vehicles are operated by different users. The data collected can also benefit road infrastructure maintenance by identifying weak points such as cracks or potholes in the road surface more quickly and efficiently. ZF's sensor technology and expertise in chassis technology are key factors in making this technology available for "Next Generation Mobility."
 
-R = V/I
+\subsection{Related work}
+\indent \\Recent research has focused on the development of height level sensors for vehicles, with a particular emphasis on their application in advanced driver-assistance systems (ADAS) and autonomous vehicles.
 
-여기서 R은 전기저항을, V는 전압을, I는 전류를 나타냅니다. 이 때, 전류가 일정하다면 전압과 전기저항은 비례 관계에 있습니다. 따라서, 전기저항이 작을수록 전압이 낮아지게 되며, 이는 전기전도도가 증가하는 것으로 해석할 수 있습니다.
+In a study published in the IEEE Transactions on Intelligent Transportation Systems, researchers investigated the use of multiple sensors, including ultrasonic, infrared, and load sensors, to improve the accuracy and reliability of height level sensors for use in ADAS. Results showed that the combination of multiple sensors provided a more accurate and robust measurement of the vehicle's ride height.
 
-토양의 경우, 전기전도도는 토양의 전기저항과 같이 토양 내부를 통과하는 전류와 전압 간의 관계로 나타낼 수 있습니다. 따라서, 전기전도도는 다음과 같은 수식으로 표현할 수 있습니다.
+Another study published in the Journal of Control Engineering and Technology explored the use of magnetic sensors for height level measurement in heavy-duty vehicles. The study found that magnetic sensors provided accurate height level measurements in challenging environments, such as construction sites or areas with high metallic interference.
 
-σ = I / V
+Moreover, machine learning algorithms have been used to enhance the accuracy and reliability of height level sensors. In a study published in the International Journal of Advanced Computer Science and Applications, researchers employed a machine learning algorithm to predict the vehicle's ride height based on sensor data from ultrasonic, infrared, and load sensors.
 
-여기서 σ는 전기전도도를, I는 전류를, V는 전압을 나타냅니다. 토양의 전기전도도는 토양 내부의 물 분자의 양과 이동성에 따라 결정되므로, 토양 습도가 높을수록 전기전도도가 증가하게 됩니다.
+Overall, the related work on height level sensors for vehicles has aimed to improve the accuracy, reliability, and robustness of these sensors, particularly for their application in ADAS and autonomous vehicles. These advancements are crucial for ensuring the safe and efficient operation of vehicles in various environments and under different conditions.
 
-따라서, 이를 이용하여 전기전도도 센서를 이용하여 토양의 전기전도도를 측정하고 이를 토양 습도로 변환하는 방법이 사용됩니다. 이를 이용하여 작물의 수분 관리를 할 수 있으며, 농업 분야에서 널리 사용되고 있습니다.
-\subsection{토양 온도와 토양 습도}
-\indent \\낮 시간동안 토양의 온도가 상승하면 토양 내부에 있는 물 분자들의 운동에너지가 증가하게 됩니다. 이는 분자들 간의 상호작용력을 극복하기 위해 물 분자들이 더욱 빠르게 움직이고, 이로 인해 수증기의 증발속도가 증가합니다. 따라서, 토양 습도는 상승하게 됩니다.
+\subsection{Applications of hall sensor in automotive}
+\indent \\Hall sensors are widely used in the automotive industry for a variety of applications. Here are some examples:
 
-이와 더불어, 토양 온도가 증가하면 토양 내부의 물 분자들이 더 높은 에너지 상태에 있게 되어서 상대적으로 덜 결합되게 됩니다. 이는 물 분자들의 이동성을 증가시키며, 이로 인해 수분이 더욱 자유롭게 이동할 수 있게 됩니다. 따라서, 토양 습도의 상승에 기여하는 요인 중 하나는 이동성이 증가하는 것입니다.
+Wheel Speed Sensors: Hall sensors are commonly used in wheel speed sensors to detect the speed and direction of rotation of a vehicle's wheels. A magnetic encoder ring is attached to the wheel, and a Hall sensor is positioned nearby. As the magnetic encoder ring rotates, it creates a magnetic field that is detected by the Hall sensor. The frequency of the magnetic field is proportional to the speed of the wheel, allowing the vehicle's control system to determine the vehicle's speed and adjust the braking and traction control accordingly.
 
-총론적으로, 낮 시간동안 토양의 온도가 상승하면 토양 내부의 수분이 증발하는 속도가 증가하고, 물 분자들의 이동성이 증가하여 토양 습도가 상승하는 것으로 보입니다.
+Camshaft Position Sensors: Hall sensors are also used in camshaft position sensors to determine the position of the camshaft in relation to the crankshaft. The sensor detects the position of a magnetic target on the camshaft, allowing the engine control module to synchronize the engine's valves with the piston movement for optimal performance.
 
-\subsubsection{하드웨어 구조}
-\indent \\관개제어기의 하드웨어는 데이터 처리와 블루투스 통신을 위한 MCU, 솔레노이드 제어를 위한 Relay, 토양 센서 데이터 수집을 위한 RS-485 트랜시버로 구성되어 있다. 센서와 솔레노이드 전원은 DC-12V 입력을 인가한다. RS-485 트랜시버는 
+Throttle Position Sensors: In electronic throttle control systems, Hall sensors are used to detect the position of the throttle plate. A magnetic field is created by a magnet mounted on the throttle shaft, and a Hall sensor is used to detect the position of the magnet. The sensor's output is used by the engine control module to adjust the engine's air intake, which in turn controls the engine's power output.
 
-\subsubsection{RS-485 통신환경}
-\indent \\RS-485 통신은 송/수신을 동시에 할 수 없는 반이중(Half-duplex) 방식을 채택하고 있어서 트랜시버에 RX와 TX를 커트롤하는 핀이 있다. 또한 데이터 전송 거리는 최대 1.2km로 장거리 전송이 가능하다. 일반적으로 100kbps 전송 속도에서 약 1.2km 전송거리를 가지며, 10Mbps 전송 속도로 올리면 전송거리가 12m로 줄어든다. RS-485통신은 하나의 노드에 여러 대의 장비를 병렬로 연결할 수 있는 멀티드랍(Multi-drop)이 가능하다.
+Gear Position Sensors: Hall sensors are also used in gear position sensors to detect the position of the vehicle's transmission. The sensor detects the position of a magnetic target on the transmission shaft, allowing the vehicle's control system to determine the vehicle's gear and adjust the engine's power output and transmission shifts accordingly.
 
-\begin{table}
-    \centering
-    \caption{Communication Basic Parameters}
-    \label{t1}
-    % \begin{tabular}{|c|c|c|c|}
-    \resizebox{\textwidth}{!}
-    {%
-    \begin{tabular}{|c|c|}
-    \noalign{\smallskip}\noalign{\smallskip}\hline
-    % & column1 & column2 & column3 \\
-    PARAMETERS & content \\
-    % \hline
-    % row1 & - & - & - \\
-    % \hline
-    % row2 & - & - & - \\
-    % \hline
-    % row3  & - & - & - \\
-    % \hline
-    \hline
-    Protocol & Modbus RTU \\
-    \hline
-    Data bits & 8 bit \\
-    \hline
-    Parity  & No \\
-    \hline
-    Stop bit  & 1 bit \\
-    \hline
-    Error checking  & CRC (redundant loop code) \\
-    \hline
-    Baud rate  & 2400 bps/ 4800 bps/ 9600 bps can be set factory defaults to 9600 bps\\
-    \hline
-    \end{tabular}
-    }
-\end{table}
+Fuel Level Sensors: Hall sensors are also used in fuel level sensors to detect the level of fuel in the vehicle's tank. A magnet is attached to a float that moves up and down with the fuel level, and a Hall sensor is used to detect the position of the magnet. The sensor's output is used to display the fuel level on the vehicle's dashboard.
 
-\begin{table}
-    \centering
-    \caption{Register Address}
-    \label{t2}
-    \resizebox{\textwidth}{!}
-    {
-    \begin{tabular}{|c|c|c|c|}
-    % \resizebox{\textwidth}{!}
-    % {
-    % \begin{tabular}{|c|c|}
-    \noalign{\smallskip}\noalign{\smallskip}\hline
-    % & column1 & column2 & column3 \\
-    Register Address & PIC Configuration Address & content & Operation \\
-    % \hline
-    % row1 & - & - & - \\
-    % \hline
-    % row2 & - & - & - \\
-    % \hline
-    % row3  & - & - & - \\
-    % \hline
-    \hline
-    0002H & 40003 & Soil humidity & Read-Only \\
-    \hline
-    0003H & 40004 & Soil temperature & Read-Only \\
-    \hline
-    0100H & 40101 & Device Address & Read-Write \\
-    \hline
-    0101H & 40102 & Baud Rate & Read-Write \\
-    \hline    
-    \end{tabular}
-    }
-\end{table}
+Overall, Hall sensors are an essential component in many automotive applications, enabling precise measurement of position, speed, and other critical parameters.
 
-% \begin{table}
-%     \centering
-%     \caption{Message Frame}
-%     \label{t3}
-%     % \resizebox{\textwidth}{!}
-%     % {
-%     \begin{tabular}{|c|c|c|c|c|c|}
-%     % \resizebox{\textwidth}{!}
-%     % {
-%     % \begin{tabular}{|c|c|}
-%     \noalign{\smallskip}\noalign{\smallskip}\hline
-%     % & column1 & column2 & column3 \\
-%     Inquiry Frame & & & & & &\\
-%     % \hline
-%     % row1 & - & - & - \\
-%     % \hline
-%     % row2 & - & - & - \\
-%     % \hline
-%     % row3  & - & - & - \\
-%     % \hline
-%     \hline
-%     Address Code & Function Code & Start Address & Data Length & CRC_L & CRC_H \\
-%     \hline
-%     Answer Frame & & & & & & \\
-%     \hline
-%     Address Code & Function Code & Number of Valid Bytes & Value & CRC_L & CRC_H \\    
-%     \hline
-%     \end{tabular}
-%     % }
-% \end{table}
+\subsubsection{Linearity of magnetic field}
+\indent \\The Hall effect is a physical phenomenon where a voltage difference, known as the Hall voltage, is generated in a conductor or semiconductor when it is placed in a magnetic field and current is passed through it perpendicular to the magnetic field direction. The magnitude and direction of the Hall voltage are proportional to the strength and direction of the magnetic field and the current passing through the conductor. This effect is widely used in sensors, particularly in Hall effect sensors.
 
-\subsubsection{메시지구조}
-\indent \\MODBUS는 산업용 표준 직렬 통신 프로토콜이다. MODBUS는 마스트와 슬레이브 프레임워크로 구성되어 있다. 슬레이브는 고유 주소를 가진다. 토양 센서에서 제공하는 MODBUS 기본 파라미터는 표\ref{t1}과 같다. 표\ref{t2}는 센서의 레지스터 주소값을 보여주고 있다. 레지스터 주소값을 기반으로 센싱 데이터를 요청할 수 있고, 센서 고유 아이디와 전송속도를 변경할 수 있다. %표\ref{t3}는 request message와 respond message 구조를 보여주고 있다.%
- 
+One important characteristic of Hall effect sensors is their linearity. Linearity refers to the relationship between the input signal (magnetic field) and the output signal (Hall voltage). A sensor is said to be linear if the output signal is proportional to the input signal. In the case of Hall effect sensors, linearity means that the Hall voltage is directly proportional to the strength of the magnetic field.
 
-\subsection{게이트웨이}
-\indent \\게이트웨이는 다수의 관개제어기로부터 토양 데이터를 수집하고, MQTT 프로토콜을 기반으로 서버로 데이터를 전송한다. 게이트웨이의 멀티태스킹을 위해서 유비노스 운영체제를 탑재하였다. 
+The linearity of Hall effect sensors is crucial for their accuracy and reliability in many applications. For example, in a wheel speed sensor, a non-linear response could cause errors in the calculation of the vehicle's speed and result in poor braking and traction control. In a current sensor, non-linearity could cause inaccuracies in the measurement of current, leading to incorrect control signals being sent to the device being powered.
 
-\subsection{서버}
-\indent \\서버는 MQTT(Message Queuing Telemetry Transport) 브로커와 데이터베이스로 구성되어 있다. MQTT는 publish/subscribe/broker를 사용하는 프로토콜로서 subscriber는 토픽을 구독하기 위한 목적,publisher는 토픽을 발행하기 위한 목적으로 broker와 연결된다. 
+To ensure linearity, Hall effect sensors are often designed with a linear Hall element and a linear amplifier circuit. The Hall element is typically made from a high-purity semiconductor material and is carefully calibrated to provide a linear response over the desired range of magnetic field strengths. The amplifier circuit is also designed to provide a linear response, amplifying the Hall voltage without distorting its linearity.
+
+Overall, the linearity of Hall effect sensors is a crucial factor in their performance and accuracy, particularly in applications where precise measurements are required.
 
 \end{document}
